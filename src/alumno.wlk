@@ -30,8 +30,8 @@ class Alumno {
 	}
 	method inscripcionAMaterias(materia){materias.add(materia)}
 	method inscripcionACarreras(carrera){carreras.add(carrera)}
-	method cursandoCarrera(){
-		return materias.count({materia=> self.materiasDeLasCarrerasInscripto() == materias})
+	method cursandoCarrera(materia){
+		return materias.forEach({materiass=> self.materiasDeLasCarrerasInscripto() == materia})
 	}
 }
 /*
